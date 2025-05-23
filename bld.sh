@@ -17,5 +17,5 @@ esac
 if [ "$module" = "all" ]; then
   ./gradlew clean build --warning-mode all
 else
-  ./gradlew ${module}:clean ${module}:build --warning-mode all
+  ./gradlew ${module}:clean ${module}:build -x test --warning-mode all
 fi
