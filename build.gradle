@@ -32,4 +32,8 @@ subprojects {
             showStandardStreams = true
         }
     }
+    
+    tasks.withType(Jar).configureEach {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
 }
