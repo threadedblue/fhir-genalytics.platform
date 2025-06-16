@@ -32,6 +32,7 @@ jacksonAnnotations = { module = "com.fasterxml.jackson.core:jackson-annotations"
 slf4jAPI = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
 logbackClassic = { module = "ch.qos.logback:logback-classic", version = "1.4.11" }
 
+junitJupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
 junitJupiterAPI = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
 junitJupiterEngine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
 
