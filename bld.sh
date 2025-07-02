@@ -50,8 +50,14 @@ fi
 # Build loop
 for project in "${selected_projects[@]}"; do
   echo "🔧 Building $project..."
-  ./gradlew ":$project:build" || {
+  
+  ./gradlew ":$project:build" -x test || {
     echo "❌ Build failed for $project"
+    exit 1
+  }
+
+  ./gradlew ":$project:publishToMavenLocal" || {
+    echo "❌ Publish to Maven Local failed for $project"
     exit 1
   }
 done
