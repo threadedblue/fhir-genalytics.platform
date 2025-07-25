@@ -3,10 +3,14 @@ pluginManagement {
     plugins {
         id 'org.springframework.boot' version '3.2.5'
         id 'io.spring.dependency-management' version '1.1.4'
+        id 'org.xtext.gradle' version '4.0.0'
     }
     repositories {
         gradlePluginPortal()
         mavenCentral()
+        maven {
+            url 'https://download.eclipse.org/modeling/tmf/xtext/updates/releases/'
+        }
     }
 }
 
@@ -22,10 +26,8 @@ rootProject.name = 'fhir-genalytics-platform'
 
 include 'd4m.acc.access'
 include 'd4m.acc.microservice'
-include 'fhir.serdeser'
-include 'emfjson-jackson'
-include 'fhir.emf-4.3.0'
-include 'fhir.emf-5.0.0'
+// include 'fhir.emf-4.3.0'
+// include 'fhir.emf-5.0.0'
 // include 'fhir.db'
 // include 'fhir.rest'
 // Add others as needed

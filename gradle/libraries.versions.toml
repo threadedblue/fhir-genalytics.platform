@@ -6,18 +6,24 @@ xcore = "1.7.0"
 xbase = "2.34.0"
 slf4j = "2.0.7"
 junit = "5.10.0"
-emfjson = "1.3.1"
-fhir = "4.3.0"
+fhir = "4.0.1"
 acc = "2.1.3"
 assertj = "3.24.2"
 mockito = "5.11.0"
-springboot = "3.2.5"
+springboot = "3.2.5" 
 spring-context = "6.1.5"
+redis = "3.2.0"
+guava = "33.4.8-jre"
+xtext = "2.39.0"
+mwe2 = "2.22.0"
+query = "0.0.1"
+guice = "7.0.0"
+
 
 [libraries]
-fhirEmf = { module = "org.hl7:fhir.emf", version.ref = "fhir" }
-
-emfjson = { module = "org.eclipse.emfcloud:emfjson-jackson", version.ref = "emfjson" }
+fhirEmf = { module = "org.hl7.fhir:fhir.emf", version.ref = "fhir" }
+queryDSL = { module = "org.hl7.fhir:d4m.acc.query", version.ref = "query" }
+guice = { module = "com.google.inject:guice", version.ref = "guice" }
 
 emfCommon = { module = "org.eclipse.emf:org.eclipse.emf.common", version.ref = "emf" }
 emfEcore = { module = "org.eclipse.emf:org.eclipse.emf.ecore", version.ref = "ecore" }
@@ -38,8 +44,11 @@ junitJupiterEngine = { module = "org.junit.jupiter:junit-jupiter-engine", versio
 
 jsonSchemaValidator = { module = "com.networknt:json-schema-validator", version = "1.0.42" }
 
+mwe2Launch = { module = "org.eclipse.emf:org.eclipse.emf.mwe2.launch", version.ref = "mwe2" }
 accumulo = { module = "org.apache.accumulo:accumulo-core", version.ref = "acc" }
 graphulo = { module = "edu.mit.ll:graphulo", version = "3.1.2" }
+guava = {module = "com.google.guava:guava", version.ref = "guava"}
+xtext = {module = "org.eclipse.xtext:org.eclipse.xtext", version.ref = "xtext"}
 
 assertj = { module = "org.assertj:assertj-core", version.ref = "assertj" }
 mockito = { module = "org.mockito:mockito-core", version.ref = "mockito" }
@@ -48,3 +57,5 @@ springWeb = { module = "org.springframework.boot:spring-boot-starter-web", versi
 springActuator = { module = "org.springframework.boot:spring-boot-starter-actuator", version.ref = "springboot" }
 context = { module = "org.springframework:spring-context", version.ref = "spring-context" }
 springTest = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "springboot" }
+springSessionDataRedis = { module = "org.springframework.session:spring-session-data-redis", version = "springboot" }
+redis = { module = "org.springframework.boot:spring-boot-starter-data-redis", version.ref = "redis"}
