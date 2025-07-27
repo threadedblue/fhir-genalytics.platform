@@ -26,6 +26,7 @@ rootProject.name = 'fhir-genalytics-platform'
 
 include 'd4m.acc.access'
 include 'd4m.acc.microservice'
+include 'fhir.emf-4.0.1'
 // include 'fhir.emf-4.3.0'
 // include 'fhir.emf-5.0.0'
 // include 'fhir.db'
