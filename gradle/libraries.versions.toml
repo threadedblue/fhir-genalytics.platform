@@ -57,5 +57,7 @@ springWeb = { module = "org.springframework.boot:spring-boot-starter-web", versi
 springActuator = { module = "org.springframework.boot:spring-boot-starter-actuator", version.ref = "springboot" }
 context = { module = "org.springframework:spring-context", version.ref = "spring-context" }
 springTest = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "springboot" }
-springSessionDataRedis = { module = "org.springframework.session:spring-session-data-redis", version = "springboot" }
+springStarterDataRedis = { module = "org.springframework.boot:spring-boot-starter-data-redis", version.ref = "springboot" }
+springSessionDataRedis = { module = "org.springframework.session:spring-session-data-redis", version.ref = "springboot" }
+
 redis = { module = "org.springframework.boot:spring-boot-starter-data-redis", version.ref = "redis"}
