@@ -8,19 +8,20 @@
 set -euo pipefail
 
 # --- options ---
-OUT_DIR="./dist"
+OUT_DIR="/Volumes/Samsung_T5/d4m-microservice"
 RUN_TESTS=0
 DO_CLEAN=0
 
 while getopts ":o:tc" opt; do
   case "$opt" in
-    o) OUT_DIR="$OPTARG" ;;
+    o) OUT_DIR ;;
     t) RUN_TESTS=1 ;;
     c) DO_CLEAN=1 ;;
     \?)
       echo "Usage: $0 [-o OUTPUT_DIR] [-t] [-c]" >&2
       exit 1
       ;;
+  
   esac
 done
 
