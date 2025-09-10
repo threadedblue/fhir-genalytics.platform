@@ -1,0 +1,22 @@
+HELP.md
+.gradle
+.classpath
+.project
+.settings/
+gradlew
+bin/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+.classpath/
+.project/
+
+*.log
+
+### VS Code ###
+.vscode/
+.DS_Store/
+
+### python ###
+*venv/
